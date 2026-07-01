@@ -1,0 +1,84 @@
+---
+- name: Install and Configure Apache Tomcat
+  hosts: tomcat
+  become: yes
+
+  vars:
+    tomcat_version: "10.1.41"
+    tomcat_url: "https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.41/bin/apache-tomcat-10.1.41.tar.gz"
+    tomcat_home: "/opt/tomcat"
+    tomcat_user: "purna"
+    tomcat_password: "purn@123"
+
+  tasks:
+
+    - name: Update apt packages
+      apt:
+        update_cache: yes
+
+    - name: Install Java
+      apt:
+        name: openjdk-21-jdk
+        state: present
+
+    - name: Create Tomcat directory
+      file:
+        path: "{{ tomcat_home }}"
+        state: directory
+
+    - name: Download Tomcat
+      get_url:
+        url: "{{ tomcat_url }}"
+        dest: /tmp/tomcat.tar.gz
+
+    - name: Extract Tomcat
+      unarchive:
+        src: /tmp/tomcat.tar.gz
+        dest: "{{ tomcat_home }}"
+
+        remote_src: yes
+        extra_opts:
+          - --strip-components=1
+
+    - name: Give execute permission
+      file:
+        path: "{{ tomcat_home }}/bin"
+        mode: "0755"
+        recurse: yes
+
+    - name: Configure tomcat-users.xml
+      blockinfile:
+        path: "{{ tomcat_home }}/conf/tomcat-users.xml"
+        insertbefore: "</tomcat-users>"
+        block: |
+          <role rolename="manager-gui"/>
+          <role rolename="admin-gui"/>
+
+          <user username="{{ tomcat_user }}"
+                password="{{ tomcat_password }}"
+                roles="manager-gui,admin-gui"/>
+
+    - name: Remove RemoteAddrValve from Manager context
+      lineinfile:
+        path: "{{ tomcat_home }}/webapps/manager/META-INF/context.xml"
+        regexp: '.*RemoteAddrValve.*'
+        state: absent
+
+    - name: Remove RemoteAddrValve from Host Manager context
+      lineinfile:
+        path: "{{ tomcat_home }}/webapps/host-manager/META-INF/context.xml"
+        regexp: '.*RemoteAddrValve.*'
+        state: absent
+
+    - name: Start Tomcat
+      shell: "{{ tomcat_home }}/bin/startup.sh"
+
+    - name: Verify Tomcat is running
+      wait_for:
+        port: 8080
+        timeout: 60
+    - name: chenge tomcat port
+      replace:
+        path: "{{ tomcat_home }}/conf/server.xml"
+        regexp: 'port="8080"'
+        replace: 'port="8888"'
