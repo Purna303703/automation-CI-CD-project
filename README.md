@@ -2,12 +2,12 @@
 
 
                                                       End-to-End DevOps CI/CD Pipeline on AWS
----------------------------------------------------------------📌 Project Overview---------------------------------------------------------------------------------
-This project demonstrates a complete End-to-End DevOps CI/CD pipeline on AWS. The infrastructure was provisioned using Terraform,application deployment was automated using Ansible, and the build process was managed through Jenkins with Maven. The application was deployed to Apache Tomcat
-running on AWS three EC2 instances.
-The objective of this project is to automate infrastructure provisioning, configuration management,
-application build, and deployment using DevOps best practices.
----------------------------------------------------------------🛠️ Technologies Used--------------------------------------------------------------------------------
+                            -----------------------------------📌 Project Overview----------------------------------
+      This project demonstrates a complete End-to-End DevOps CI/CD pipeline on AWS. The infrastructure was provisioned using Terraform,application deployment was        automated using Ansible, and the build process was managed through Jenkins with Maven. The application was deployed to Apache Tomcat
+      running on AWS three EC2 instances.
+      The objective of this project is to automate infrastructure provisioning, configuration management,
+      application build, and deployment using DevOps best practices.
+                            -----------------------------------🛠️ Technologies Used----------------------------------
 
                                                                      Terraform  
                                                                      AWS EC2
@@ -22,7 +22,7 @@ application build, and deployment using DevOps best practices.
                                                                      Linux
                                                                      Git & GitHub
                                                                      
-------------------------------------------------------🏗️ Infrastructure Created Using Terraform--------------------------------------------------------------------
+                            ----------------------------🏗️ Infrastructure Created Using Terraform-------------------------
 
                                                                  Custom VPC
                                                                  Public Subnets
@@ -34,7 +34,7 @@ application build, and deployment using DevOps best practices.
                                                                  Ansible Server
                                                                  Tomcat Application Server
                                                                  
---------------------------------------------------------------⚙️ Automation Workflow-------------------------------------------------------------------------------
+                            -----------------------------------⚙️ Automation Workflow---------------------------------------
                                                     
                                                     1.Terraform provisions the AWS infrastructure.
                                                     2.Three EC2 instances are created automatically.
@@ -44,7 +44,7 @@ application build, and deployment using DevOps best practices.
                                                     6.Apache Tomcat hosts the application.
                                                     7.The application becomes accessible through the Tomcat server.
                                                     
----------------------------------------------------------------📂 Project Structure--------------------------------------------------------------------------------
+                            ------------------------------------📂 Project Structure-------------------------------------------
                                                                 
                                                                 automatin-CI/CD-project
                                                                         |terraform/
@@ -55,12 +55,12 @@ application build, and deployment using DevOps best practices.
                                                                         |
                                                                         |README.md
                                                                         
---------------------------------------------------------------------🎥 Project VIDEO-------------------------------------------------------------------------------
+                              ------------------------------------------🎥 Project VIDEO--------------------------------------------
                                                       
                                                       Watch the complete project video here :
-                                                      https://youtu.be/198FdC0zh14?si=p48mneIK1zjEZu3_
+                                                      https://youtu.be/198FdC0zh14?si=p48mneIK1zjEZu3
  
---------------------------------------------------------------🎯 KEY LEARNING OUTCOMES-----------------------------------------------------------------------------
+                               -----------------------------------🎯 KEY LEARNING OUTCOMES--------------------------------------------
 
                                                         Infrastructure as Code (Terraform)
                                                        AWS Networking (VPC, Subnets, Security Groups)
@@ -71,7 +71,7 @@ application build, and deployment using DevOps best practices.
                                                         Linux Server Administration
                                                          DevOps CI/CD Workflow
                                     
----------------------------------------------------------------------AUTHOR----------------------------------------------------------------------------------------
+                                  ----------------------------------------AUTHOR---------------------------------------
                                                             Purna Chandra Rao
                                                       Aspiring DevOps & Cloud Engineer
                                                     GitHub:-
