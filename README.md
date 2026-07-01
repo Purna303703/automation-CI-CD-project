@@ -57,7 +57,7 @@
                                                                         
                               ------------------------------------------🎥 Project VIDEO--------------------------------------------
                                                       
-                                                      Watch the complete project video here :
+.                                                      Watch the complete project video here :
                                                       https://youtu.be/198FdC0zh14?si=p48mneIK1zjEZu3
  
                                -----------------------------------🎯 KEY LEARNING OUTCOMES--------------------------------------------
@@ -76,5 +76,5 @@
                                                       Aspiring DevOps & Cloud Engineer
                                                     GitHub:-
                                                     https://github.com/Purna303703
-                                                    YouTube Demo:- 
+.                                                   YouTube Demo:- 
                                                     https://youtu.be/198FdC0zh14?si=p48mneIK1zjEZu3
