@@ -1,9 +1,5 @@
 [End-to-End_DevOps_CI-CD_Pipeline_with_Clickable_Link.pdf](https://github.com/user-attachments/files/29561110/End-to-End_DevOps_CI-CD_Pipeline_with_Clickable_Link.pdf)
-
-                                                    ----------------------------------------------
-                                                      # End-to-End DevOps CI/CD Pipeline on AWS
-                                                    ----------------------------------------------
-                                                    
+# End-to-End DevOps CI/CD Pipeline on AWS                                                    
                             -----------------------------------📌 Project Overview----------------------------------
       This project demonstrates a complete End-to-End DevOps CI/CD pipeline on AWS. The infrastructure was provisioned using Terraform,application deployment was        automated using Ansible, and the build process was managed through Jenkins with Maven. The application was deployed to Apache Tomcat
       running on AWS three EC2 instances.
