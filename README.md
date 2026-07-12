@@ -1,5 +1,11 @@
 # pdf download link 
 [End-to-End_DevOps_CI-CD_Pipeline_with_Clickable_Link.pdf](https://github.com/user-attachments/files/29561110/End-to-End_DevOps_CI-CD_Pipeline_with_Clickable_Link.pdf)
+
+# 🎥 Project VIDEO link
+                                                      
+.                                                      Watch the complete project video here :
+                                                      https://youtu.be/198FdC0zh14?si=p48mneIK1zjEZu3
+                                                      
 # End-to-End DevOps CI/CD Pipeline on AWS                                                    
                             -----------------------------------📌 Project Overview----------------------------------
       This project demonstrates a complete End-to-End DevOps CI/CD pipeline on AWS. The infrastructure was provisioned using Terraform,application deployment was        automated using Ansible, and the build process was managed through Jenkins with Maven. The application was deployed to Apache Tomcat
@@ -53,11 +59,6 @@
                                                                         |   |---tomcat.yaml
                                                                         |
                                                                         |README.md
-                                                                      
-# 🎥 Project VIDEO link
-                                                      
-.                                                      Watch the complete project video here :
-                                                      https://youtu.be/198FdC0zh14?si=p48mneIK1zjEZu3
  
                                -----------------------------------🎯 KEY LEARNING OUTCOMES--------------------------------------------
 
@@ -73,7 +74,7 @@
                                   ----------------------------------------AUTHOR---------------------------------------
                                                             Purna Chandra Rao
                                                       Aspiring DevOps & Cloud Engineer
-                                                    GitHub:-
-                                                    https://github.com/Purna303703
-.                                                   YouTube Demo:- 
-                                                    https://youtu.be/198FdC0zh14?si=p48mneIK1zjEZu3
+.                                                   website:-
+                                                     https://purnachandrarao-portfolio.netlify.app/
+.                                                    linkdin:- 
+                                                    https://www.linkedin.com/in/s-purnachandra-rao-devops-engineer/
